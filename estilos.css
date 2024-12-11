@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+/*importa estilo de fuente¨ de google apis*/
+
+/*estilo para todo html*/
+html{
+    scroll-behavior: smooth; /*desplazamiento por la web suave al hacer clic en el enlace de anclaje*/
+    
+}
+
+/*estilo Media query*/
+@media (max-width: 768px) {
+    header {
+      background-color: #ee9377; /* color de fondo para pantallas pequeñas */
+    }
+  }
+  
+  /* Media query para pantallas entre 768px y 1024px (tablets en orientación horizontal) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    header {
+      background-color: #B1F0F7; /* color de fondo para pantallas medianas */
+    }
+  }
+  
+  /* Media query para pantallas mayores a 1024px (escritorio) */
+  @media (min-width: 1025px) {
+    header {
+      background-color: #ECEBDE;
+       /* color de fondo para pantallas grandes */
+    }
+}
+
+/*estilo para todo el body*/
+body{
+    margin: 15px 15px !important; /*margen uniforme de 15px importante= prioritario sobre otras reglas*/
+    background: #F7F1E1; /*fondo claro*/
+    font-size: 18px; /*tamaño fuente para mejor lectura*/
+}
+
+/*estilo para header*/
+header{
+    display: flex; /* Establece un contenedor flexbox */
+    flex-direction: row; /* Ordena en una fila horizontal*/
+    text-align: justify; /* Justifica el contenido, alimea ambos margen */
+    justify-content: center; /* Centra los elementos horizontalmente  */
+    align-items: center; /* Centra los elementos verticalmente */
+    outline-style: double; /* Aplica un borde exterior. */
+    outline-color: #FC6736; /* Define el color del borde  */
+
+}
+header h1 {
+    font-family: "Playwrite GB S"; /* Especifica la fuente del encabezado principal. */
+    font-style: normal; /*(sin cursiva u otros estilos). */
+    font-weight: 500; /* Establece un peso de fuente intermedio (semi-negrita). */
+    background: linear-gradient(to right, red, blue); /* Aplica un degradado de rojo a azul como fondo del texto. */
+    background-clip: text; /* Limita el fondo al área del texto */
+    -webkit-background-clip: text; /* Propiedad especifica de  navegadores, se recorta al texto crando un fondo visible solo dentro del texto.*/
+    color: transparent; /* Hace que el color del texto sea transparente, revelando el fondo degradado. */
+    text-decoration-line: overline; /* Añade una línea decorativa encima del texto. */
+    text-decoration-color: #FC6736; /* Define el color de la línea decorativa como naranja brillante. */    
+    text-align: center; /* Centra el texto dentro del contenedor. */
+}
+
+ /*estilo para el navegador*/ 
+.navegador-links ul{
+    margin: 0; /* Elimina el margen externo para que la lista no tenga espacio alrededor. */
+    background-color: #134B70; /* Define un color de fondo azul oscuro para la lista de navegación. */
+    display: flex; /* Usa Flexbox para organizar los elementos de la lista en línea. */
+    justify-content: center; /* Centra horizontalmente los elementos de la lista */
+    font-size: 20px; /* Ajusta el tamaño de fuente de los enlaces */
+}
+.navegador-links ul li {
+    padding: 20px 20px; /* Agrega un espacio interno uniforme alrededor de cada elemento de la lista. */
+    list-style: none; /* Quita los estilos de lista, como viñetas o números. */
+}
+
+.navegador-links ul li a {
+    color: white; /* Establece el color del texto de los enlaces en blanco */
+    display: block; /* Hace que los enlaces ocupen toda el área del elemento, facilitando el clic. */
+    padding: 10px 0; /* Agrega un espacio interno vertical al contenido del enlace. */
+}
+
+.navegador-links a:hover {
+    background-color: #111; /* Cambia el color de fondo del enlace al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor a "puntero" */
+}
+
+/*estilo para todo imagenes en un contenedor*/
+.contenedor-imagenes { 
+  display: flex; /* Utiliza Flexbox para organizar las imágenes dentro del contenedor. */
+  justify-content: center; /* Centra las imágenes horizontalmente dentro del contenedor. */
+  align-items: center; /* Alinea las imágenes verticalmente al centro del contenedor. */
+}
+.contenedor-imagenes img {
+  width: 33.33%; /* Cada imagen ocupa un 1/3 */  
+  height: auto; /* Ajusta automáticamente la altura de la imagen. */
+  object-fit: cover; /* Asegura que las imágenes llenen su contenedor */
+  opacity: .8; /* Reduce la opacidad de las imágenes al 80% . */
+  transition: .5s ease; /* Añade una transición suave de 0.5 segundos */
+}
+.contenedor-imagenes img:hover {
+  cursor: zoom-in; /* Cambia el cursor a una lupa */
+  width: 40%; /* Amplía la imagen al 40% del ancho  */
+  opacity: 1; /* Restaura la opacidad de la imagen al 100% */
+  filter: contrast(120%); /* Aumenta el contraste de la imagen en un 20%  */
+}
+
+/*estilo para todo frase*/
+blockquote {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important; /* Define una familia de fuentes serif clásica */
+  display: flex; /* Usa Flexboxz para organizar el contenido dentro del bloque. */
+  padding: 20px 20px;   /* Agrega espacio interno de 20px. */
+  font-size: 45px;  /* tamaño de fuente grande para destacar el contenido del bloque. */
+  outline-style: groove; /* Aplica un borde exterior con estilo de ranura. */
+  outline-color: #C4E1F6;   /* Asigna un color celeste suave al borde exterior. */
+  background: linear-gradient(45deg, #FAB12F, #FFEBCD);   /* Aplica un degradado diagonal (45 grados) tono dorado (#FAB12F) con beige claro (#FFEBCD). */
+  border-radius: 10px;   /* Redondea las esquinas del bloque */
+  text-align: center; /* Centra el texto dentro del bloque, alineándolo horizontalmente. */
+  font-style: italic;   /* Aplica un estilo de texto en cursiva */
+  margin: 10px 10px;   /* Agrega un espacio externo uniforme para separar de otros elementos. */
+  transform: skew(10deg, 0);   /* Inclina el bloque 10 grados hacia la derecha en el eje X. */
+}
+
+/*estilo para historia*/
+.History {
+  background-color: #134B70;   /* Establece un fondo azul oscuro. */
+  color: white;   /* Define el color del texto en blanco */
+  text-align: center;   /* Centra el texto horizontalmente dentro del contenedor. */
+  padding: 15px;   /* Añade un espacio interno uniforme de 15px alrededor del contenido. */
+  font-size: 20px;   /* Establece el tamaño de la fuente en 20px */
+}
+
+.tres-columnas {
+  column-count: 3; 
+  /* Divide el contenido en tres columnas */
+  column-gap: 33px; 
+  /* Establece un espacio de 33px entre las columnas. */
+}
+
+/*estilo para aside*/
+aside {
+  width: 20%; /*ancho del 20%*/
+  float: right; /*flota al lado derecho, el contenido se ajusta a su izquierda*/
+  background-color: #FFF6E9;/*tono crema claro*/
+  text-align: center;  /* Centra el contenido dentro del aside, incluyendo la imagen */
+}
+
+aside img {
+  display: inline-block;  /* Hace que la imagen se comporte como un bloque en línea */
+  max-width: 85%;       /* limita el ancho de la imagen al 85% de su contenedor */
+}
+
+video{
+  width: 75%;              /* El ancho del video es el 75% del contenedor */
+  max-width: 800px;        /* Limita el ancho máximo a 800px */
+  height: auto;            /* Ajusta la altura automáticamente para mantener la proporción */
+
+}
+
+
+/*estilo para noticias*/
+.news {
+  background-color: #134B70;  /* Establece un fondo azul oscuro (#134B70), creando contraste con el texto blanco*/
+  color: white;  /* Define el color del texto en blanco */
+  text-align: center; /* Centra el texto horizontalmente dentro del contenedor. */
+  padding: 15px;  /* Añade un espacio interno uniforme de 15px alrededor del contenido */
+  font-size: 20px; /* Establece el tamaño de la fuente en 20px*/
+}
+
+/*Estilo de la galeria de fotos*/
+.fotos-titulo {
+  background-color: #134B70; /* fondo azul oscuro */
+  color: white; /* texto en blanco*/
+  text-align: center;  /* Alinea horizontalmente*/
+  padding: 15px;  /* Agrega un espacio interno uniforme de 15px*/
+  font-size: 20px;  /* texto en 20px */
+}
+div.contenedor-desplazamiento {
+  background-color: #333;  /* Establece un fondo gris oscuro para el contenedor */
+  overflow: auto;  /*Agregue barras de desplazamiento . */
+  white-space: nowrap; /* contenido manteniéndo en una sola fila. */
+  padding: 10px; /* Agrega un espacio interno de 10px. */
+}
+  
+div.contenedor-desplazamiento img {
+  padding: 10px;  /* Agrega un espacio interno uniforme de 10px . */
+  height: 30%;  /* Define la altura de cada imagen como el 30% del contenedor padre. */
+  width: 40%; /* Establece el ancho de cada imagen como el 40% */
+}
+
+
+/*Estilo para el formulario de contacto*/
+.contacto-titulo {
+  background-color: #134B70;  /*fondo azul oscuro  */
+  color: white;  /*  texto en blanco */
+  text-align: center; /* Centra el texto horizontalmente*/
+  padding: 15px; /* Agrega un espacio interno uniforme de 15px */
+  font-size: 20px; /* tamaño de fuente de 20px. */
+}
+.contenedor-contacto{
+  display: flex;  /* organiza los elementos hijos dentro del contenedor. */
+  gap: 20px; /* Establece un espacio de 20px entre los elementos dentro del contenedor */
+  background-color: white; /* Define el color de fondo como blanco. */
+  padding: 20px; /* Añade un espacio interno de 20px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil debajo del contenedor */
+}
+.contact-form, .map {
+  flex: 1; /*ambos tienen la misma proporcion del contenedor*/
+}
+.contact-form h2, .map h2 {
+  margin-bottom: 15px; /*margen de 15px en la parte inferior de h2*/
+  color: #333; /*texto del emcabezado color gris oscuro*/
+}
+.contact-form label {
+  display: block; /*label se comporta como bloque, ocupando nueva linea separado de otros elementos*/
+  margin: 10px 0 5px;/*10px  margen superior 0 margen der- izq 5px margen inferior*/
+  color: #333; /*label gris oscuro, texto de formulario */
+}
+.contact-form input, .contact-form textarea {
+  width: 100%; /*ocup el 100% del ancho a lo ancho de toda la sexxion del formlario*/
+  padding: 8px; /*espacio interno de 8px*/
+  margin-bottom: 15px; /*margen inferior de 15px, esapcio entre campos del formulaario*/
+  border: 1px solid #ccc;/*borde solido de 1px gris claro*/
+  border-radius: 4px; /*redondea esquina de los cuadros en un radio de 4px*/
+}
+.contact-form button {
+  padding: 10px 15px; /*espacio interno de 10px relleno inferior- superior, 15px izquierdo y derecho*/
+  background-color: #81BFDA; /*color de fondo del botón, en tono celeste*/
+  color: #1A1A1D; /*letras de color oscuro*/
+  border: none; /*elimina cualquier borde*/
+  border-radius: 4px; /*borde redondo, con un valor de 4px*/
+  cursor: pointer; /*puntero se convierte en una mano cuando pasa el mouse*/
+}
+.contact-form button:hover {
+  background-color: #0A97B0; /*fondo color celeste  mas oscuro*/
+}
+#clear-button {
+  background-color: #FFD2A0; /*fondo color naranja*/
+}
+#clear-button:hover {
+  background-color: #AB4459; /* Más oscuro al pasar el mouse */
+}
+
+
+/*Mapa de ubicación*/
+.map iframe {
+  width: 100%; /*ancho del iframe en un 100% del contenedor*/
+  height: 300px; /*altura en 300px,  a traves de un valor fijo*/
+  border: 0; /*elimina cualquier borde predeterminado*/
+  border-radius: 4px; /*redondeo de los borden en 4px*/
+}
+
+/*redes sociales*/
+p-redes {
+  font-family: Arial, sans-serif !important; /*familia de tipografia con ariel como fundamental, con prioridad*/
+  font-size: 18px; /*tamaño de fuente 18px*/
+  color: #333 /*color de fuente gris oscuro*/;
+}
+.social-link {
+  text-decoration: none;/*elimina cualquier decoracion al texto, como subrayado*/
+  color: #333;/*color del texto gris oscuro*/
+  font-weight: bold; /*fuente negrita al texto del enlace*/
+  font-size: 20px /*fuente tamaño 20px*/
+}
+.social-link img {
+  margin-right: 8px; /*margen de 8px a la derecha de la imagen*/
+  margin-left: 8px; /*margen de 8px a la izquierda de la imagen*/
+}
+
+.social-link:hover {
+  color: #00509e;/*texto azul oscuro cuando pasa el ratón por el, marcando interactividad*/
+  transform: scale(1.2); /*elemento se agranda 20% mas, parece crecer*/
+}
+
+/* Estilo básico del footer */
+footer {
+  position: fixed; /* Fija el footer en la parte inferior de forma fija */
+  left: 0;/* borde izquierdo del pie de página en el extremo izquierdo de la ventana.*/
+  bottom: 0;/*Coloca el borde inferior del pie de página en el extremo inferior de la ventana.*/
+  width: 100%; /* ancho del pie de página en el 100% del ancho de la ventana*/
+  background-color: #333; /*color de fondo gris oscuro*/
+  color: white; /*color de texto blanco*/
+  text-align: center; /*centra texto dentro del pie de pagina*/
+  padding: 10px 0;/*agrega espacio de 10px arriba y najo del texto*/
+  font-size: 14px; /*tamaño de fuente 14px*/
+  z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+
+/*estilo para el boto volver al inicio*/
+.boton-inicio {
+  display: inline-block; /*elemento se comporta como bloque pero se comporta como un elemento en linea en termino de flujo de textp*/
+  padding: 10px 20px;/*espacio interno de 10px superior e inferior y de 20px izquierdo y derecho*/
+  margin: 20px 0;/* margen de 20px arriba y abajo del botón y cero a los lados*/
+  font-size: 16px;/*fuente tamaño 16px*/
+  color: #fff;/*color del texto blanco*/
+  background-color: #007bff;/*color de fondo como azul clarao*/
+  text-decoration: none;/*sin decoracion en el texto, como subrayado*/
+  border-radius: 5px;/*borde redondeado con un radio de  5px*/
+  transition: background-color 0.3s ease;/*transicion suave con una duracion de 0,3 seg*/
+}
+
+.boton-inicio:hover {
+  background-color: #0056b3; /*cuando el cursor pasa cambia a un color mas oscuro*/
+}
+
+
+
