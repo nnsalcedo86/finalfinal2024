@@ -144,19 +144,6 @@ aside {
   text-align: center;  /* Centra el contenido dentro del aside, incluyendo la imagen */
 }
 
-aside img {
-  display: inline-block;  /* Hace que la imagen se comporte como un bloque en línea */
-  max-width: 85%;       /* limita el ancho de la imagen al 85% de su contenedor */
-}
-
-video{
-  width: 75%;              /* El ancho del video es el 75% del contenedor */
-  max-width: 800px;        /* Limita el ancho máximo a 800px */
-  height: auto;            /* Ajusta la altura automáticamente para mantener la proporción */
-
-}
-
-
 /*estilo para noticias*/
 .news {
   background-color: #134B70;  /* Establece un fondo azul oscuro (#134B70), creando contraste con el texto blanco*/
