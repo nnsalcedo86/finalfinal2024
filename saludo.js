@@ -1,4 +1,4 @@
-// Este es mi archivo java
+// Este es mi archivo javaScript
 var hola = "hola mundo"
 console.log(hola)
 let hello = "hello world"
